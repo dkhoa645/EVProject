@@ -68,6 +68,8 @@ public class AuthController {
     // Test endpoint to verify the configuration
     @GetMapping("/test")
     public ResponseEntity<?> test() {
+        System.out.println("test");
+
         return ResponseEntity.ok(Map.of("message", "Public endpoint working"));
     }
 
